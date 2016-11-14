@@ -643,7 +643,7 @@ typedef __int64 int64_t;
     /// <summary>
     ///     TimeTravel move options as bit flag enum.
     /// </summary>
-    typedef enum _JsTTDMoveModes : int64_t
+    typedef enum _JsTTDMoveModes
     {
         /// <summary>
         ///     Indicates no special actions needed for move.

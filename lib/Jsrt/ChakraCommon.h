@@ -71,6 +71,11 @@ typedef BYTE* ChakraBytePtr;
 #define CHAKRA_API extern "C" SET_API_VISIBILITY JsErrorCode
 #else
 #define CHAKRA_API extern     SET_API_VISIBILITY JsErrorCode
+#include <stdbool.h>
+#endif
+
+#if !defined(__cplusplus) || (__cplusplus <= 199711L)
+#define nullptr 0
 #endif
 
 #include <stddef.h>  // for size_t
